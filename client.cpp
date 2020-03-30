@@ -62,7 +62,7 @@ int main()
                 char recvbuf[BUFFER_SIZE];
                 int len;
                 len = recv(sock_cli, recvbuf, sizeof(recvbuf),0);
-                cout <<  "来自服务器的消息：" << recvbuf << endl;
+                cout <<  "接收到的消息：" << recvbuf << endl;
                 memset(recvbuf, 0, sizeof(recvbuf));
             }
             /*用户输入信息了,开始处理信息并发送*/

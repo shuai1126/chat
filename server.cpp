@@ -62,7 +62,7 @@ void thread_fn()
                 int len = recv(conn, buffer, sizeof(buffer), 0);//把接收到的数据存放于buffer中
                 if(strcmp(buffer, "exit\n") == 0)//如果接受到的是空
                     break;
-                cout<< "来自客户端的消息："<<buffer<<endl;
+                cout<< "接收到的消息："<<buffer<<endl;
             }
             /*用户输入信息了,开始处理信息并发送*/
             if(FD_ISSET(0, &rfds))
